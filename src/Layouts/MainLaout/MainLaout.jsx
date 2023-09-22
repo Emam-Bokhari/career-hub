@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Footer from "../../pages/Footer/Footer";
 
 
 const MainLaout = () => {
@@ -44,9 +45,11 @@ const MainLaout = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="min-h-screen">
                     <Outlet />
                 </div>
+
+                <Footer/>
 
             </section>
 
